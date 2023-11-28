@@ -1,0 +1,150 @@
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  font-size: 1.8rem;
+  background-color: #4c6e97;
+  border: none;
+  border-radius: 0.5rem;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+/* nav section with hero */
+
+.main-head {
+  background: #131c27;
+  color: whitesmoke;
+}
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(31, 31, 31, 0.5), transparent),
+    url("/img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* LOCATIONS SECTION */
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(31, 31, 31, 0.5), transparent),
+    url("/img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.locations-head h3 {
+  padding: 3rem 0;
+  background: linear-gradient(#131c27, #663b34);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 933px) {
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  html {
+    font-size: 45%;
+  }
+}
